@@ -1,17 +1,22 @@
-:root {
-  color-scheme: dark;
-}
-
+:root { color-scheme: dark; }
 * { box-sizing: border-box; }
 body {
   margin: 0;
   font-family: Inter, system-ui, sans-serif;
-  background: radial-gradient(circle at top, #141c2f, #05070f 60%);
-  color: #f3f6ff;
+  background: radial-gradient(circle at 20% 0%, #1b2747, #070a13 60%);
+  color: #f2f5ff;
 }
-
 .des-shell { padding: 4rem; min-height: 100vh; }
-.des-hero h1 { font-size: 3rem; margin-bottom: 0.5rem; }
-.des-hero p { color: #b9c2e8; }
-.des-grid { margin-top: 2rem; display: grid; grid-template-columns: repeat(2, minmax(220px, 1fr)); gap: 1rem; }
-.des-card { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.14); padding: 1.2rem; border-radius: 14px; backdrop-filter: blur(10px); }
+.des-hero { max-width: 900px; }
+.des-hero h1 { font-size: 3rem; margin: 0 0 0.75rem; }
+.des-hero p { color: #b9c2e8; line-height: 1.6; }
+.des-grid { margin-top: 2rem; display: grid; grid-template-columns: repeat(2, minmax(230px, 1fr)); gap: 1rem; }
+.des-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+  padding: 1rem;
+  backdrop-filter: blur(12px);
+}
+.des-card h3 { margin: 0 0 0.35rem; font-size: 1rem; }
+.des-card p { margin: 0; color: #c7d1f5; }
