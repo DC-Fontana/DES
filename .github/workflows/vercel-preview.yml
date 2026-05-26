@@ -1,0 +1,15 @@
+name: Vercel Preview
+
+on:
+  push:
+    branches:
+      - "**"
+  pull_request:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Vercel deployment placeholder
+        run: echo "Set VERCEL_TOKEN, VERCEL_ORG_ID, and VERCEL_PROJECT_ID secrets to enable deploys."

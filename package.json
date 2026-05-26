@@ -1,0 +1,15 @@
+{
+  "name": "des",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "npm --workspace @des/web run dev",
+    "build:web": "npm --workspace @des/web run build",
+    "lint:web": "npm --workspace @des/web run lint",
+    "test:api": "pytest services/api/tests -q"
+  }
+}
